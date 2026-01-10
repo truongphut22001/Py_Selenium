@@ -16,12 +16,15 @@ try:
         options=chrome_options
     )
     driver.get("https://rahulshettyacademy.com/AutomationPractice")
-    checkBoxs = driver.find_elements(By.XPATH, "//input[@type='checkbox']")
-    for checkbox in checkBoxs:
-        if checkbox.get_attribute("value") == "option2":
-            checkbox.click()
-            assert checkbox.is_selected()
-            break
+
+    name = "Phu"
+    driver.find_element(By.ID, "name").send_keys(name)
+    driver.find_element(By.ID, "alertbtn").click()
+    alert_popup = driver.switch_to.alert
+    alert_text =  alert_popup.text
+    assert name in alert_text
+    alert_popup.accept()
+    # alert_popup.dismiss()
     time.sleep(3)
 finally:
     driver.quit()
