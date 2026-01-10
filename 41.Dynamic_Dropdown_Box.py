@@ -18,7 +18,8 @@ try:
     # driver = webdriver.Chrome()
     driver.get("https://rahulshettyacademy.com/dropdownsPractise")
     # Dynamic dropdown box
-    search_TxtBox = driver.find_element(By.ID, "autosuggest").send_keys("ind")
+    search_TxtBox = driver.find_element(By.ID, "autosuggest")
+    search_TxtBox.send_keys("ind")
     time.sleep(2)
 
     list_DropBox_Items = driver.find_elements(By.CSS_SELECTOR, "li[class='ui-menu-item'] a")
