@@ -25,9 +25,14 @@ try:
     time.sleep(3)
     item_list = driver.find_elements(By.CSS_SELECTOR, "div.products-wrapper .products .product")
     assert len(item_list) > 0
-
+    expected_item_list = ["Cucumber - 1 Kg", "Raspberry - 1/4 Kg", "Strawberry - 1/4 Kg"]
+    actual_item_list = []
     for item in item_list:
+        item_text = item.find_element(By.CSS_SELECTOR, ".product-name").text
+        assert "ber" in item_text
+        actual_item_list.append(item_text)
         item.find_element(By.CSS_SELECTOR, ".product-action button").click()
+    assert actual_item_list == expected_item_list
 
     driver.find_element(By.CSS_SELECTOR, ".cart-icon img").click()
     driver.find_element(By.XPATH, "//button[text()='PROCEED TO CHECKOUT']").click()
@@ -47,6 +52,8 @@ try:
     total_expected_after_discount = total_expected * (1 - discount_percent)
     total_actual_after_discount = total_actual * (1 - discount_percent)
     assert total_expected_after_discount == total_actual_after_discount
+
+    assert total_actual_after_discount < total_actual
 
 finally:
     driver.quit()

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aeb97181-e3c8-4b28-95e9-387d58a68320" name="Changes" comment="Script 44, 45">
-      <change afterPath="$PROJECT_DIR$/47.Wait.py" afterDir="false" />
+    <list default="true" id="aeb97181-e3c8-4b28-95e9-387d58a68320" name="Changes" comment="Script 47_50_Implicit_Explicit_Wait">
+      <change afterPath="$PROJECT_DIR$/56.Action_Class.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/57.SwitchTab.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/57_1.Practice.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/47_50.Implicit_Explicit_Wait.py" beforeDir="false" afterPath="$PROJECT_DIR$/47_54.Implicit_Explicit_Wait.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +56,10 @@
     "Python.43.CheckBoxDynamic.executor": "Run",
     "Python.45.AlertPopup.executor": "Run",
     "Python.47.Wait.executor": "Run",
+    "Python.47_50.Implicit_Explicit_Wait.executor": "Debug",
+    "Python.56.Action_Class.executor": "Debug",
+    "Python.57.SwitchTab.executor": "Run",
+    "Python.57_1.Practice.executor": "Run",
     "Python.inspectHtmlElement2.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -62,6 +69,7 @@
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/Phu/Desktop/Py_Selenium",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "editor.preferences.completion",
     "vue.rearranger.settings.migration": "true"
   }
@@ -170,7 +178,7 @@
       <workItem from="1768021682607" duration="4000" />
       <workItem from="1768022681872" duration="5000" />
       <workItem from="1768022694938" duration="1022000" />
-      <workItem from="1768023792907" duration="9273000" />
+      <workItem from="1768023792907" duration="14396000" />
     </task>
     <task id="LOCAL-00001" summary="Init new selenium project">
       <option name="closed" value="true" />
@@ -220,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768030301854</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Script 47_50_Implicit_Explicit_Wait">
+      <option name="closed" value="true" />
+      <created>1768035887883</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1768035887883</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +248,8 @@
     <MESSAGE value="Update script 41" />
     <MESSAGE value="Script 43" />
     <MESSAGE value="Script 44, 45" />
-    <option name="LAST_COMMIT_MESSAGE" value="Script 44, 45" />
+    <MESSAGE value="Script 47_50_Implicit_Explicit_Wait" />
+    <option name="LAST_COMMIT_MESSAGE" value="Script 47_50_Implicit_Explicit_Wait" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -241,6 +258,20 @@
           <url>file://$PROJECT_DIR$/43_44.CheckBoxDynamic.py</url>
           <line>34</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/56.Action_Class.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/57_1.Practice.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/57_1.Practice.py</url>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -254,8 +285,12 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Py_Selenium$47_Wait.coverage" NAME="47.Wait Coverage Results" MODIFIED="1768035535233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Py_Selenium$56_Action_Class.coverage" NAME="56.Action_Class Coverage Results" MODIFIED="1768037989072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Py_Selenium$inspectHtmlElement2.coverage" NAME="inspectHtmlElement2 Coverage Results" MODIFIED="1768028378502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Py_Selenium$57_1_Practice.coverage" NAME="57_1.Practice Coverage Results" MODIFIED="1768040956610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Py_Selenium$43_CheckBoxDynamic.coverage" NAME="43.CheckBoxDynamic Coverage Results" MODIFIED="1768029977688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Py_Selenium$45_AlertPopup.coverage" NAME="45.AlertPopup Coverage Results" MODIFIED="1768031102003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Py_Selenium$57_SwitchTab.coverage" NAME="57.SwitchTab Coverage Results" MODIFIED="1768038960080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Py_Selenium$47_50_Implicit_Explicit_Wait.coverage" NAME="47_50.Implicit_Explicit_Wait Coverage Results" MODIFIED="1768037101009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
