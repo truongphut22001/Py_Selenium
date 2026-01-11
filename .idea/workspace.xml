@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aeb97181-e3c8-4b28-95e9-387d58a68320" name="Changes" comment="Script 56,57,57_1">
-      <change afterPath="$PROJECT_DIR$/58.IFrame.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/59.JS_In_Selenium.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/60.Verify_Sorted_List.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/61.Chrome_Options.py" afterDir="false" />
+    <list default="true" id="aeb97181-e3c8-4b28-95e9-387d58a68320" name="Changes" comment="Script 63">
+      <change afterPath="$PROJECT_DIR$/64_66.Download_Edit_Upload_Excel_File.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/68.Practice.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +52,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.43.CheckBoxDynamic.executor": "Run",
-    "Python.43_44.CheckBoxDynamic.executor": "Run",
+    "Python.43_44.CheckBoxDynamic.executor": "Debug",
     "Python.45.AlertPopup.executor": "Run",
     "Python.47.Wait.executor": "Run",
     "Python.47_50.Implicit_Explicit_Wait.executor": "Debug",
@@ -64,6 +62,10 @@
     "Python.58.IFrame.executor": "Debug",
     "Python.59.JS_In_Selenium.executor": "Run",
     "Python.60.Verify_Sorted_List.executor": "Run",
+    "Python.63.Handle_Excel_File.executor": "Run",
+    "Python.64.Download_Edit_Upload_Excel_File.executor": "Debug",
+    "Python.65.Download_Edit_Upload_Excel_File.executor": "Debug",
+    "Python.68.Practice.executor": "Run",
     "Python.inspectHtmlElement2.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -132,6 +134,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="65.Download_Edit_Upload_Excel_File" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Py_Selenium" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/65.Download_Edit_Upload_Excel_File.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="inspectHtmlElement2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Py_Selenium" />
       <option name="ENV_FILES" value="" />
@@ -158,6 +184,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.65.Download_Edit_Upload_Excel_File" />
         <item itemvalue="Python.43_44.CheckBoxDynamic" />
         <item itemvalue="Python.45.AlertPopup" />
         <item itemvalue="Python.inspectHtmlElement2" />
@@ -183,7 +210,8 @@
       <workItem from="1768022681872" duration="5000" />
       <workItem from="1768022694938" duration="1022000" />
       <workItem from="1768023792907" duration="15972000" />
-      <workItem from="1768060949932" duration="3633000" />
+      <workItem from="1768060949932" duration="3939000" />
+      <workItem from="1768109227485" duration="9410000" />
     </task>
     <task id="LOCAL-00001" summary="Init new selenium project">
       <option name="closed" value="true" />
@@ -249,7 +277,23 @@
       <option name="project" value="LOCAL" />
       <updated>1768041351435</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Script 58, 59, 60, 61">
+      <option name="closed" value="true" />
+      <created>1768064885878</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1768064885878</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Script 63">
+      <option name="closed" value="true" />
+      <created>1768111721350</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1768111721350</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +307,9 @@
     <MESSAGE value="Script 44, 45" />
     <MESSAGE value="Script 47_50_Implicit_Explicit_Wait" />
     <MESSAGE value="Script 56,57,57_1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Script 56,57,57_1" />
+    <MESSAGE value="Script 58, 59, 60, 61" />
+    <MESSAGE value="Script 63" />
+    <option name="LAST_COMMIT_MESSAGE" value="Script 63" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -287,6 +333,10 @@
           <url>file://$PROJECT_DIR$/57_1.Practice.py</url>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/63.Handle_Excel_File.py</url>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -298,14 +348,18 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Py_Selenium$68_Practice.coverage" NAME="68.Practice Coverage Results" MODIFIED="1768118896246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Py_Selenium$47_Wait.coverage" NAME="47.Wait Coverage Results" MODIFIED="1768035535233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Py_Selenium$58_IFrame.coverage" NAME="58.IFrame Coverage Results" MODIFIED="1768042204768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Py_Selenium$inspectHtmlElement2.coverage" NAME="inspectHtmlElement2 Coverage Results" MODIFIED="1768028378502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Py_Selenium$57_1_Practice.coverage" NAME="57_1.Practice Coverage Results" MODIFIED="1768040956610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Py_Selenium$43_44_CheckBoxDynamic.coverage" NAME="43_44.CheckBoxDynamic Coverage Results" MODIFIED="1768062703945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Py_Selenium$43_44_CheckBoxDynamic.coverage" NAME="43_44.CheckBoxDynamic Coverage Results" MODIFIED="1768110724224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Py_Selenium$43_CheckBoxDynamic.coverage" NAME="43.CheckBoxDynamic Coverage Results" MODIFIED="1768029977688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Py_Selenium$45_AlertPopup.coverage" NAME="45.AlertPopup Coverage Results" MODIFIED="1768031102003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Py_Selenium$64_Download_Edit_Upload_Excel_File.coverage" NAME="64.Download_Edit_Upload_Excel_File Coverage Results" MODIFIED="1768114893365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Py_Selenium$60_Verify_Sorted_List.coverage" NAME="60.Verify_Sorted_List Coverage Results" MODIFIED="1768064168428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Py_Selenium$63_Handle_Excel_File.coverage" NAME="63.Handle_Excel_File Coverage Results" MODIFIED="1768110811008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Py_Selenium$65_Download_Edit_Upload_Excel_File.coverage" NAME="65.Download_Edit_Upload_Excel_File Coverage Results" MODIFIED="1768113249355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Py_Selenium$56_Action_Class.coverage" NAME="56.Action_Class Coverage Results" MODIFIED="1768037989072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Py_Selenium$57_SwitchTab.coverage" NAME="57.SwitchTab Coverage Results" MODIFIED="1768038960080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Py_Selenium$47_50_Implicit_Explicit_Wait.coverage" NAME="47_50.Implicit_Explicit_Wait Coverage Results" MODIFIED="1768037101009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
