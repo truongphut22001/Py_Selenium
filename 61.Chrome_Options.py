@@ -32,7 +32,7 @@ try:
         options=chrome_options
     )
     driver.implicitly_wait(3)
-    driver.get("https:/rahulshettyacademy.com/seleniumPractise/#/offers")
+    driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers")
     driver.find_element(By.CSS_SELECTOR, "th:nth-child(1)").click()
     Select(driver.find_element(By.ID, "page-menu")).select_by_visible_text("20")
     actual_sorted_ascending = []
