@@ -1,8 +1,10 @@
+import json
 import time
 from asyncio import wait
 from tokenize import tabsize
 
 import openpyxl
+import pytest
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.chrome.options import Options
@@ -12,6 +14,10 @@ from selenium.webdriver.common.devtools.v141.dom_storage import Item
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+
+from pageObjects.CheckoutPage import CheckoutPage
+from pageObjects.LoginPage import LoginPage
+
 
 # chrome_options = Options()
 # chrome_options.add_argument("--start-maximized")
@@ -24,31 +30,21 @@ from selenium.webdriver.support import expected_conditions as EC
 # chrome_options.add_argument("--lang=vi")
 # chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
 # chrome_options.add_experimental_option("useAutomationExtension", False)
+test_data_path = "C:\\Users\\Phu\\Desktop\\Py_Selenium\\data\\test_84_Implement_Fixture.json"
+with open(test_data_path) as f:
+    test_data = json.load(f)
+    test_list = test_data["data"]
 
-def test_e2e(browserInstance):
-    try:
-        driver = browserInstance
-
-        driver.get("https://rahulshettyacademy.com/loginpagePractise/")
-        driver.find_element(By.ID, "username").send_keys("rahulshettyacademy")
-        driver.find_element(By.ID, "password").send_keys("learning")
-        driver.find_element(By.ID, "terms").click()
-        driver.find_element(By.ID, "signInBtn").click()
-
-        driver.find_element(By.CSS_SELECTOR, "a[href*='shop']").click()
-        phone_list = driver.find_elements(By.CSS_SELECTOR, "app-card-list app-card")
-        for phone in phone_list:
-            if phone.find_element(By.CSS_SELECTOR, "h4.card-title a").text == "Blackberry":
-                phone.find_element(By.CSS_SELECTOR, ".card-footer button").click()
-                break
-        driver.find_element(By.CSS_SELECTOR, "a[class*='btn-primary']").click()
-        driver.find_element(By.CSS_SELECTOR, ".btn-success").click()
-        driver.find_element(By.ID, "country").send_keys("Ind")
-        WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.LINK_TEXT, "India")))
-        driver.find_element(By.LINK_TEXT, "India").click()
-        driver.find_element(By.CSS_SELECTOR, ".checkbox.checkbox-primary").click()
-        driver.find_element(By.CSS_SELECTOR, "input[value='Purchase']").click()
-        assert "Success! Thank you! Your order will be delivered in next few weeks" in driver.find_element(
-            By.CSS_SELECTOR, ".alert-success").text
-    finally:
-        driver.quit()
+@pytest.mark.smoke
+@pytest.mark.parametrize("test_item", test_list)
+def test_e2e(browserInstance, test_item):
+    driver = browserInstance
+    driver.get("https://rahulshettyacademy.com/loginpagePractise/")
+    login = LoginPage(driver);
+    login.get_title()
+    shop_page =  login.login(test_item["userEmail"], test_item["passWord"])
+    shop_page.add_product_to_cart(test_item["productName"])
+    checkout_page = shop_page.goToCart()
+    checkout_page.click_checkout()
+    checkout_page.enter_delivery_address("India")
+    checkout_page.validate_order()

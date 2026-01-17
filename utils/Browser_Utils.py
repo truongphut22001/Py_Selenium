@@ -1,0 +1,6 @@
+class Browser_Utils:
+    def __init__(self, driver):
+        self.driver = driver
+
+    def get_title(self):
+        return self.driver.title
